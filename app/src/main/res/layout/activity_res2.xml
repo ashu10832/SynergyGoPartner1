@@ -1,123 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:background="@drawable/background2"
+    android:verticalScrollbarPosition="right">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".Res1Act">
 
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
+        android:layout_weight="1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
         android:text="Vehicle Seen"
-        android:id="@+id/textView52"
-        android:layout_marginTop="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/Finishbtnsr"
-        android:layout_toStartOf="@+id/Finishbtnsr" />
+        android:id="@+id/textView52" />
 
     <Spinner
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.00"
         android:id="@+id/Vehiclespinner"
-        android:layout_alignTop="@+id/textView52"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_alignBottom="@+id/textView52"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        />
+</LinearLayout>
+
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Registeration No."
-        android:id="@+id/textView"
-        android:layout_above="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/textView" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/RegNoeditText"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/textView52"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_alignRight="@+id/Vehiclespinner"
-        android:layout_alignEnd="@+id/Vehiclespinner" />
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/RegNoeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Carpet Area"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/RegNoeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView2" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
-        android:ems="10"
         android:id="@+id/CarpetAreaeditText"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignLeft="@+id/RegNoeditText"
-        android:layout_alignStart="@+id/RegNoeditText" />
+        />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Political Influence"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/CarpetAreaeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView3" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/PoliticaleditText"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignRight="@+id/CarpetAreaeditText"
-        android:layout_alignEnd="@+id/CarpetAreaeditText"
-        android:layout_alignLeft="@+id/CarpetAreaeditText"
-        android:layout_alignStart="@+id/CarpetAreaeditText" />
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/PoliticaleditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Other Remarks"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/PoliticaleditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/CarpetAreaeditText"
-        android:layout_toStartOf="@+id/CarpetAreaeditText"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView4" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/OtherRemarkseditText"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4" />
+        android:id="@+id/OtherRemarkseditText" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Finish"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ripple_1"
+        android:layout_gravity="right"
+        android:ems="8"
         android:id="@+id/Finishbtnsr"
-        android:layout_below="@+id/OtherRemarkseditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp"
         android:onClick="onClickFinishsr" />
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>

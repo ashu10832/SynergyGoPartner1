@@ -28,9 +28,9 @@ public class LoginAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ema=(EditText)findViewById(R.id.AgenitIDeditText);
+        ema=(EditText)findViewById(R.id.email);
         pass=(EditText)findViewById(R.id.PasseditText);
-        agentID=(EditText)findViewById(R.id.id);
+        agentID=(EditText)findViewById(R.id.agentId);
 
     }
 

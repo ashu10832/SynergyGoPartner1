@@ -1,38 +1,51 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="16dp"
+    android:orientation="vertical">
 
 
     <Button
+        android:background="@drawable/ripple_1"
         android:id="@+id/refresh"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="get Coordinates" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/lat"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="get Coordinates"
-        android:layout_alignBaseline="@+id/lat"
-        android:layout_alignBottom="@+id/lat"
+        android:textSize="16sp"
+        android:layout_below="@+id/refresh"
         android:layout_centerHorizontal="true" />
 
     <TextView
-            android:id="@+id/lat"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/lng" />
-
-    <TextView
         android:id="@+id/lng"
-        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
+        android:layout_below="@id/lat"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+         />
 
     <Button
-        android:text="photo"
+        android:background="@drawable/ripple_1"
+        android:id="@+id/pho"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pho"
-        android:onClick="onc" />
+        android:onClick="onc"
+        android:text="upload photo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
-</LinearLayout>
+</RelativeLayout>

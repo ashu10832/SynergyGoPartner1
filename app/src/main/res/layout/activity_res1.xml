@@ -1,206 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background2"
+    android:verticalScrollbarPosition="right">
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".Res1Act">
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Contacted Person Name"
-        android:id="@+id/textView43"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Residential Status"
-        android:id="@+id/textView44"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/textView43"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Name Of Person Contacted"
+        android:id="@+id/textView43" />
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/Personnameet"
-        android:hint="Name"
-        android:layout_alignTop="@+id/textView43"
-        android:layout_toEndOf="@+id/textView43"
-        android:layout_toRightOf="@+id/textView43" />
+        android:id="@+id/Personnameet" />
 
-    <Spinner
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ResStatusSpinner"
-        android:layout_alignBottom="@+id/textView44"
-        android:layout_toRightOf="@+id/textView43"
-        android:layout_toEndOf="@+id/textView43" />
+        android:orientation="horizontal">
 
     <TextView
+        android:layout_weight="1"
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="Residential Status"
+        android:textSize="24sp"
+        android:id="@+id/textView44" />
+
+    <Spinner
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/ResStatusSpinner" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
         android:text="Marital Status"
-        android:id="@+id/textView45"
-        android:layout_below="@+id/ResStatusSpinner"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView45" />
 
     <Spinner
+        android:layout_weight="1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/MaritalStatusSpinner"
-        android:layout_alignBottom="@+id/textView45"
-        android:layout_alignLeft="@+id/ResStatusSpinner"
-        android:layout_alignStart="@+id/ResStatusSpinner" />
+        android:layout_height="match_parent"
+        android:id="@+id/MaritalStatusSpinner" />
+        </LinearLayout>
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="No. Of Family Members"
-        android:id="@+id/textView46"
-        android:layout_marginTop="28dp"
-        android:layout_below="@+id/textView45"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/textView46" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
-        android:ems="10"
-        android:id="@+id/FamilymemeditText"
-        android:layout_alignBottom="@+id/textView46"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView43"
-        android:layout_toEndOf="@+id/textView43" />
+        android:id="@+id/FamilymemeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Working Members"
-        android:id="@+id/textView47"
-        android:layout_below="@+id/FamilymemeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/textView47" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/workingmemeditText"
-        android:layout_alignBottom="@+id/textView47"
-        android:layout_alignLeft="@+id/dependenteditText"
-        android:layout_alignStart="@+id/dependenteditText" />
+        android:id="@+id/workingmemeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Dependent Members"
         android:id="@+id/textView48"
-        android:layout_below="@+id/workingmemeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
-        android:ems="10"
-        android:id="@+id/dependenteditText"
-        android:layout_alignBottom="@+id/textView48"
-        android:layout_toRightOf="@+id/textView48"
-        android:layout_toEndOf="@+id/textView48" />
+        android:id="@+id/dependenteditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Children"
         android:id="@+id/textView49"
-        android:layout_below="@+id/dependenteditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
         android:ems="10"
         android:id="@+id/ChildreneditText"
-        android:layout_alignBottom="@+id/textView49"
-        android:layout_alignRight="@+id/SpouseeditText"
-        android:layout_alignEnd="@+id/SpouseeditText" />
+        />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Spouse Emp."
-        android:id="@+id/textView50"
-        android:layout_below="@+id/ChildreneditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:id="@+id/textView50" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
+        android:inputType="textPersonName"
+        android:id="@+id/SpouseeditText" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/SpouseeditText"
-        android:layout_alignBottom="@+id/textView50"
-        android:layout_alignRight="@+id/Personnameet"
-        android:layout_alignEnd="@+id/Personnameet"
-        android:layout_toRightOf="@+id/textView45"
-        android:layout_toEndOf="@+id/textView45" />
-
+        android:orientation="horizontal">
     <TextView
+        android:layout_weight="1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
         android:text="Locality"
-        android:id="@+id/textView51"
-        android:layout_below="@+id/SpouseeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:id="@+id/textView51" />
 
     <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Localityspinner"
-        android:layout_alignTop="@+id/textView51"
-        android:layout_alignLeft="@+id/FamilymemeditText"
-        android:layout_alignStart="@+id/FamilymemeditText" />
 
-    <Button
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/Localityspinner"
+        />
+</LinearLayout>
+    <Button
+        android:background="@drawable/ripple_1"
+        android:layout_width="169dp"
         android:layout_height="wrap_content"
         android:text="Next"
         android:id="@+id/nextsr1btn"
         android:onClick="onClicknextsr1"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textView46"
-        android:layout_toEndOf="@+id/textView46" />
-</RelativeLayout>
+        android:textSize="20sp"
+        android:layout_gravity="right"/>
+</LinearLayout>
+</ScrollView>

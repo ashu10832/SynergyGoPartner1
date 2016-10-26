@@ -1,189 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background2"
+    android:verticalScrollbarPosition="right">
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".Bus1Act">
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Person Contacted"
         android:id="@+id/textView55"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
+        />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/nameeditText"
-        android:layout_alignBottom="@+id/textView55"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/textView55"
-        android:layout_toRightOf="@+id/textView55" />
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/nameeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Designation"
-        android:id="@+id/textView56"
-        android:layout_below="@+id/nameeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp" />
+        android:id="@+id/textView56" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/designationeditText"
-        android:layout_below="@+id/nameeditText"
-        android:layout_toRightOf="@+id/textView55"
-        android:layout_alignRight="@+id/nameeditText"
-        android:layout_alignEnd="@+id/nameeditText" />
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/designationeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Contact No."
-        android:id="@+id/textView57"
-        android:layout_below="@+id/designationeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:id="@+id/textView57" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
-        android:ems="10"
-        android:id="@+id/phoneeditText"
-        android:layout_below="@+id/designationeditText"
-        android:layout_alignLeft="@+id/designationeditText"
-        android:layout_alignStart="@+id/designationeditText" />
+        android:id="@+id/phoneeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Office Telephone No."
-        android:id="@+id/textView58"
-        android:layout_below="@+id/phoneeditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/phoneeditText"
-        android:layout_toStartOf="@+id/phoneeditText" />
+        android:id="@+id/textView58" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/offteleditText"
-        android:layout_alignBottom="@+id/textView58"
-        android:layout_alignLeft="@+id/phoneeditText"
-        android:layout_alignStart="@+id/phoneeditText" />
+        android:id="@+id/offteleditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="Nature Of Business"
-        android:id="@+id/textView59"
-        android:layout_below="@+id/textView58"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView58"
-        android:layout_alignEnd="@+id/textView58" />
+        android:id="@+id/textView59" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/busnatureeditText"
-        android:layout_below="@+id/textView58"
-        android:layout_toRightOf="@+id/textView58"
-        android:layout_toEndOf="@+id/textView58" />
+        android:id="@+id/busnatureeditText" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="No. of Years of Company"
-        android:id="@+id/textView60"
-        android:layout_below="@+id/textView59"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/textView59"
-        android:layout_alignEnd="@+id/textView59" />
+        android:id="@+id/textView60" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:inputType="number"
-        android:ems="10"
-        android:id="@+id/yearseditText"
-        android:layout_alignTop="@+id/textView60"
-        android:layout_toRightOf="@+id/textView60"
-        android:layout_toEndOf="@+id/textView60" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/yearseditText" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
         android:text="Type of Company"
-        android:id="@+id/textView61"
-        android:layout_below="@+id/textView60"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/textView61" />
 
     <Spinner
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.00"
         android:id="@+id/spinnecompanytyper"
-        android:layout_alignTop="@+id/textView61"
-        android:layout_alignLeft="@+id/yearseditText"
-        android:layout_alignStart="@+id/yearseditText" />
-
+        />
+    </LinearLayout>
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="start"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
         android:text="No. of Employees"
-        android:id="@+id/textView62"
-        android:layout_below="@+id/spinnecompanytyper"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:id="@+id/textView62" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="6dp"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_style"
         android:ems="10"
-        android:id="@+id/EmpeditText"
-        android:layout_below="@+id/spinnecompanytyper"
-        android:layout_toRightOf="@+id/textView61"
-        android:layout_toEndOf="@+id/textView61"
-        android:layout_marginTop="30dp" />
+        android:id="@+id/EmpeditText" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
+        android:layout_height="50dp"
+        android:text="Finish"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ripple_1"
+        android:layout_gravity="right"
+        android:ems="8"
         android:id="@+id/nxtbbtn"
-        android:layout_below="@+id/EmpeditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
         android:onClick="onClickNextb1" />
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>

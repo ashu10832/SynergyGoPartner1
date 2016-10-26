@@ -12,8 +12,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.vision.text.Text;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -56,7 +58,7 @@ public class AssignmentChooseAct extends AppCompatActivity {
                     x++;
 
                 }
-                ArrayAdapter arrayAdapter = new ArrayAdapter(AssignmentChooseAct.this, android.R.layout.simple_list_item_1,fi);
+                ArrayAdapter arrayAdapter = new ArrayAdapter(AssignmentChooseAct.this, R.layout.lv_custom,fi);
                 if(x==0){
                     AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(AssignmentChooseAct.this);
                     alertDialogBuilder.setMessage("Nothing is there!! Please Try Again.");

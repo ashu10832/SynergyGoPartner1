@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal">
 
-    <TextView
+
+    <TextView android:padding="8dp"
+    android:background="@drawable/ripple_1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/list_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="hello world"
-        android:textStyle="normal|bold|italic"
+        android:textStyle="normal"
         android:layout_gravity="center_horizontal"
         android:clickable="false"
         android:textAlignment="center"
-        android:textSize="35dp"
-        android:textColor="#1565C0"
+        android:textSize="32dp"
+        android:textColor="#1A237E"
         android:layout_margin="5dp" />
-</LinearLayout>
